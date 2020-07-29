@@ -18,7 +18,11 @@
 		"moduleResolution": "node",
 		"target": "esnext",
 		"outDir": "lib",
-		"lib": ["dom", "esnext"]
+		"lib": ["dom", "esnext"],
+		"baseUrl": ".",
+		"paths": {
+			"@react-design-editor": ["../src/index.tsx"]
+		}
 	},
 	"include": ["src/**/*"],
 	"exclude": ["node_modules", "dist", "lib"]
